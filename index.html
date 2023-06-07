@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/img-pestana.png" type="image/x-icon">
+
+    <!--SEO-->
+    <title>Portafolio Stiven Medina</title>
+    <meta name="description" content="¡Bienvenidos a mi portafolio web! Aquí podrás explorar una colección cuidadosamente seleccionada de mi trabajo y proyectos. Sumérgete en un mundo visualmente atractivo donde encontrarás ejemplos de mis habilidades y experiencia en diferentes áreas. Desde diseño gráfico hasta desarrollo web, este portafolio refleja mi pasión por la creatividad y el diseño. ¡Disfruta de tu visita y descubre lo que puedo ofrecerte!">
+    <meta name="keywords" content="Portafolio Web, Portfolio, Diseño Gráfico, Diseñador Web, Diseñador Gráfico, Experiencia, Trabajos, Proyectos, UI/UX, Personal, Profesión">
+
+    <!--CSS bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--TIPOGRAFIA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet"> 
+
+    <!--ICONOS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class='fondo'></div>
+    <!--HEADER-->
+    <header class="header">
+        <nav class="navbar navbar-expand-md bg-body-tertiary d-none d-md-block">
+            <div class="container-fluid text-center">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#acercaDeMi">Acerca de mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <header class="menuHamburguesa d-sm-block d-md-none">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li ><a href="#inicio" id="btnInicio">Inicio</a></li>
+                <li ><a href="#acercaDeMi" id="btnAcercaMi">Acerca de mi</a></li>
+                <li ><a href="#proyectos" id="btnProyectos">Proyectos</a></li>
+                <li ><a href="#contacto" id="btnContacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="container" id="inicio">
+            <div class="row justify-content-center seccion1">
+                <div class="col-11 col-md-10 col-lg-7">
+                    <h1>
+                        Bienvenid@s
+                    </h1>
+                    <p>
+                        ¡Hola! Soy un diseñador apasionado que se complace en dar vida a ideas creativas y transformarlas en experiencias visuales cautivadoras. Estoy emocionado de compartir mi trabajo contigo y de mostrarte el mundo de posibilidades que el diseño puede ofrecer. ¡Acompáñame en este viaje creativo y descubre cómo mi pasión por el diseño puede marcar la diferencia en tu proyecto!
+                    </p>
+                </div>
+                <div class="col-lg-4 espacioBoton">
+                    <div class="botonCirculo">
+                        <!-- circle button -->
+                        <div class="circle-button">
+                            <div id="circ" class="text-circle">
+                            Conocer más · Conocer más ·
+                            </div>
+                            <a href="#acercaDeMi" class="btn-circle">
+                                <i class="bi bi-arrow-down"></i>
+                            </a>
+                        </div>
+                        <!-- / end circle button -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION ACERCA DE MI-->
+        <section class="container-fluid seccionAcercaDeMi" id="acercaDeMi">
+            <div class="row justify-content-center centrar">
+                <div class="col-lg-5 text-center d-none d-lg-block">
+                    <img src="images/imagen.png" class="mx-auto img-fluid" alt="">
+                </div>
+                <div class="col-11 col-lg-6 d-none d-sm-block">
+                    <h2>
+                        ACERCA DE MI
+                    </h2>
+                    <p>
+                        Mi nombre es Oscar Stiven Medina, soy una persona a la cual le encanta viajar, conocer nuevos lugares y explorar nuevas culturas, además de ser una persona apasionada por la música, el arte, los deportes y los animales, me ayudan a establecer una forma de pensar diferente y ser más creativo.<br><br>
+                        Soy una persona ordenada, divertida, puntual, creativa y abierta a aprender cada día nuevas habilidades en relación al diseño y en la vida en general, puesto que en el aprender esta el crecer.<br><br>
+                        Como diseñador soy curioso, me gusta explorar las tendencias actuales del diseño y lo que me rodea, pero también esta mi parte tecnológica, conocer nuevas formas en las que pueda integrar mi creatividad para que florezca de manera única. <br><br>
+                        Mi experiencia profesional y conocimientos son: Diseño de experiencia de usuario e interfaz de usuario (UX-UI), Diseño web, Diseño editorial, Animación, Branding, Fotografía, Retoque digital, el desarrollo Frontend y la ilustración.<br><br>
+                        En mi trayectoria como diseñador me ha apasionado la curiosidad, la creatividad, y el trabajo en equipo; la forma de hacer que las personas interactúen con los elementos visuales para comunicar un mensaje eficaz, sin olvidar habilidades como organización, rápidez, efectividad junto con la posibilidad de entender, empatizar y analizar las necesidades del cliente y de quien recibe finalmente el mensaje visual.
+                    </p>
+                    <a download="" class="d-none d-lg-block">
+                        <button type="button" class="btn btnDesktop">
+                            <i class="bi bi-cloud-download-fill"></i> Descargar CV
+                        </button>
+                    </a>                
+                </div>  
+                <div class="col-11 col-lg-6 d-block d-sm-none">
+                    <h2>
+                        ACERCA DE MI
+                    </h2>
+                    <p>
+                        Mi nombre es Oscar Stiven Medina, soy una persona a la cual le encanta viajar, conocer nuevos lugares y explorar nuevas culturas, además de ser una persona apasionada por la música, el arte, los deportes y los animales, me ayudan a establecer una forma de pensar diferente y ser más creativo.<br><br>
+                        Como diseñador soy curioso, me gusta explorar las tendencias actuales del diseño y lo que me rodea, pero también esta mi parte tecnológica, conocer nuevas formas en las que pueda integrar mi creatividad para que florezca de manera única. <br><br>
+                        Conoce más acerca de mi descargando mi CV en el siguiente botón.
+                    </p>               
+                </div>
+                <div  class="col-10 text-center d-md-block d-lg-none">
+                    <a download="" class="d-md-block d-lg-none">
+                        <button type="button" class="btn btnMobile">
+                            <i class="bi bi-cloud-download-fill"></i> Descargar CV
+                        </button>
+                    </a>
+                </div>                    
+            </div>
+        </section>
+
+        <!--SECCION PROYECTOS-->
+        <section class="container-fluid seccionProyectos" id="proyectos">
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-12 text-center">
+                    <h2>
+                        PROYECTOS
+                    </h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <nav>
+                        <div class="nav nav-tabs" id="tabProyectos" role="tablist">
+                            <button class="nav-link active" id="nav-web-tab" data-bs-toggle="tab" data-bs-target="#nav-web" type="button" role="tab" aria-controls="nav-web" aria-selected="false">UI / Web</button>
+                            <button class="nav-link" id="nav-diseño-tab" data-bs-toggle="tab" data-bs-target="#nav-diseño" type="button" role="tab" aria-controls="nav-diseño" aria-selected="true">Diseño</button>
+                            <!--<button class="nav-link" id="nav-animacion-tab" data-bs-toggle="tab" data-bs-target="#nav-animacion" type="button" role="tab" aria-controls="nav-animacion" aria-selected="false">Animación</button>
+                            <button class="nav-link" id="nav-ilustracion-tab" data-bs-toggle="tab" data-bs-target="#nav-ilustracion" type="button" role="tab" aria-controls="nav-ilustracion" aria-selected="false">Ilustración</button>-->
+                            
+                        </div>
+                    </nav>
+
+                    <!--CONTENIDO TABS-->
+                    <div class="tab-content text-center" id="tabContentProtectos">
+                        <!--CONTENIDO TAB 1-->
+                        <div class="tab-pane fade show active" id="nav-web" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                            <div class="proyectos">
+                                <hr>
+                                <div class="row justify-content-center">
+                                    <div class="col-10 col-md-5 col-lg-5">
+                                        <div class="proyecto">
+                                            <img src="images/numero-1.svg" class="img-fluid" alt="">
+                                            <p class="nombreProyecto">
+                                                Davivienda Móvil (Centro América)
+                                            </p>
+                                            <a href="https://movil.davivienda.cr/" target="_blank">
+                                                <i class="bi bi-eye-fill"></i> Ver proyecto
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-md-6 col-lg-7">
+                                        <img src="images/mockup-davivienda-movil.png" class="img-fluid imagenProyecto" alt="">
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="proyectos">
+                                <hr>
+                                <div class="row justify-content-center">
+                                    <div class="col-10 col-md-5 col-lg-5">
+                                        <div class="proyecto">
+                                            <img src="images/numero-2.svg" class="img-fluid" alt="">
+                                            <p class="nombreProyecto">
+                                                Propuesta App Cinecolombia
+                                            </p>
+                                            <a href="https://www.behance.net/gallery/85010395/Propuesta-de-app-cineco" target="_blank">
+                                                <i class="bi bi-eye-fill"></i> Ver proyecto
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-md-6 col-lg-7">
+                                        <img src="images/Cel-cinecolombia.png" class="img-fluid imagenProyecto" alt="">
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="proyectos">
+                                <hr>
+                                <div class="row justify-content-center">
+                                    <div class="col-10 col-md-5 col-lg-5">
+                                        <div class="proyecto">
+                                            <img src="images/numero-3.svg" class="img-fluid" alt="">
+                                            <p class="nombreProyecto">
+                                                Propuesta App resultados deportivos
+                                            </p>
+                                            <a href="https://www.behance.net/gallery/98848465/Score-App-Ui-design" target="_blank">
+                                                <i class="bi bi-eye-fill"></i> Ver proyecto
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-md-6 col-lg-7">
+                                        <img src="images/Cel-deportes.png" class="img-fluid imagenProyecto" alt="">
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+
+                        <!--CONTENIDO TAB 2-->
+                        <div class="tab-pane fade" id="nav-diseño" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                            <div class="proyectos">
+                                <hr>
+                                <div class="row justify-content-center">
+                                    <div class="col-10 col-md-5 col-lg-5">
+                                        <div class="proyecto">
+                                            <img src="images/numero-1.svg" class="img-fluid" alt="">
+                                            <p class="nombreProyecto">
+                                                Email Marketing Davivienda
+                                            </p>
+                                            <a href="#" target="_blank">
+                                                <i class="bi bi-eye-fill"></i> Ver proyecto
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-md-6 col-lg-7">
+                                        <img src="images/Cel-cinecolombia.png" class="img-fluid imagenProyecto" alt="">
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="proyectos">
+                                <hr>
+                                <div class="row justify-content-center">
+                                    <div class="col-10 col-md-5 col-lg-5">
+                                        <div class="proyecto">
+                                            <img src="images/numero-2.svg" class="img-fluid" alt="">
+                                            <p class="nombreProyecto">
+                                                Posters minimal 1.0
+                                            </p>
+                                            <a href="https://www.behance.net/gallery/105668659/Minimal-Posters-10" target="_blank">
+                                                <i class="bi bi-eye-fill"></i> Ver proyecto
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-md-6 col-lg-7">
+                                        <img src="images/minimal-posters.png" class="img-fluid imagenProyecto" alt="">
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="proyectos">
+                                <hr>
+                                <div class="row justify-content-center">
+                                    <div class="col-10 col-md-5 col-lg-5">
+                                        <div class="proyecto">
+                                            <img src="images/numero-3.svg" class="img-fluid" alt="">
+                                            <p class="nombreProyecto">
+                                                Identidad de marca TRIBUTAR-IA SAS
+                                            </p>
+                                            <a href="https://www.behance.net/gallery/105668659/Minimal-Posters-10" target="_blank">
+                                                <i class="bi bi-eye-fill"></i> Ver proyecto
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-md-6 col-lg-7">
+                                        <img src="images/minimal-posters.png" class="img-fluid imagenProyecto" alt="">
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="proyectos">
+                                <hr>
+                                <div class="row justify-content-center">
+                                    <div class="col-10 col-md-5 col-lg-5">
+                                        <div class="proyecto">
+                                            <img src="images/numero-4.svg" class="img-fluid" alt="">
+                                            <p class="nombreProyecto">
+                                                Infografías
+                                            </p>
+                                            <a href="https://www.behance.net/gallery/84415617/Conoce-la-Feria-de-Manizales" target="_blank">
+                                                <i class="bi bi-eye-fill"></i> Ver proyecto
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-md-6 col-lg-7">
+                                        <img src="images/mockup-infografias.png" class="img-fluid imagenProyecto" alt="">
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>                       
+
+                        <!--CONTENIDO TAB 3
+                        <div class="tab-pane fade" id="nav-animacion" role="tabpanel" aria-labelledby="nav-animacion-tab" tabindex="0">
+                            3
+                        </div>-->
+
+                        <!--CONTENIDO TAB 4
+                        <div class="tab-pane fade" id="nav-ilustracion" role="tabpanel" aria-labelledby="nav-ilustracion-tab" tabindex="0">
+                            4
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--SECCION CONTACTO-->
+        <section class="container-fluid seccionContacto" id="contacto">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 text-center">
+                    <h2>
+                        ¿Quieres trabajar conmigo?
+                    </h2>
+                    <a href="mailto:osmedinav@gmail.com">
+                        <button>
+                            <span class="new">Contáctame</span>
+                            <span class="old">Contáctame</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="socialMedia">
+                <a href="https://www.behance.net/oscar__steven" target="_blank" class="redSocial">
+                    <p>Behance</p>
+                    <img src="images/icono-behance.svg" class="img-fluid" alt="Icono Behance">
+                </a>
+                <a href="https://www.linkedin.com/in/oscar-stiven-medina-vargas/" target="_blank" class="redSocial2">
+                    <p>Linkedin</p>
+                    <img src="images/icono-linkedin.svg" class="img-fluid" alt="Icono Linkedin">
+                </a>
+                <a href="https://github.com/oscarstiv" target="_blank" class="redSocial">
+                    <p>GitHub</p>
+                    <img src="images/icono-github.svg" class="img-fluid" alt="Icono GitHub">
+                </a>
+                <a href="https://www.instagram.com/oscar__stiven/" target="_blank" class="redSocial2">
+                    <p>Instagram</p>
+                    <img src="images/icono-instagram.svg" class="img-fluid" alt="Icono Instagram">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+    <script>
+        new CircleType(document.getElementById('circ'));
+    </script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

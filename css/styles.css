@@ -1,0 +1,993 @@
+/* VARIABLES */
+:root{
+    --textosTitulos:'Calistoga', cursive;
+    --textosParrafos:'Signika Negative', sans-serif;
+    --colorAzul: #3C8BE7;
+    --colorBlanco: #ffffff;
+
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--textosParrafos);
+    scroll-behavior: smooth;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BODY */
+.fondo{
+    background-color: #FFFCF8;
+    opacity: 0.4;
+    background-image: radial-gradient(#3C8BE7 1.25px, #FFFCF8 1.25px);
+    background-size: 25px 25px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2000;
+}
+body{
+    position: relative;
+}
+hr{
+    border: 1px solid var(--colorAzul);
+    opacity: 0.7;
+}
+
+/* HEADER */
+
+/* Navbar */
+.header {
+    position: absolute;
+    top: 20px;
+    right: 50%;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;    
+    position: fixed;
+    z-index: 1000;
+}
+.header .navbar {
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.32);       
+    max-width: 700px;    
+}
+.header .navbar .navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    gap: 50px;
+} 
+.header .navbar .nav-link {
+    font-weight: bold;
+    transition: 0.3s; 
+    white-space: nowrap;
+}
+.header .navbar .nav-item .nav-link:hover{
+    color: var(--colorAzul);
+}
+.header .navbar .nav-item .nav-link:active{
+    color: var(--colorAzul);
+}
+
+/* MENU */
+
+.menuHamburguesa {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 2rem;
+    background-color: #ececec;    
+    z-index: 1000 !important;
+}
+
+.menuHamburguesa .logo {
+    max-width: 5rem;
+}
+
+.menuHamburguesa .nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.menuHamburguesa .nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.menuHamburguesa .abrir-menu,
+.menuHamburguesa .cerrar-menu {
+    display: none;
+}
+
+/* PRIMERA SECCION */
+
+.seccion1{
+    min-height: 90vh;
+}
+.seccion1 h1{
+    margin-top: 30%;
+    margin-bottom: 30px;
+    font-family: var(--textosTitulos);
+    color: var(--colorAzul);
+    font-size: 8rem;
+}
+.seccion1 p{
+    text-align: justify;
+    font-size: 1rem;
+}
+.espacioBoton{
+    position: relative;
+}
+.botonCirculo{
+    position: absolute;
+    bottom: -80px;
+    right: 30%;
+}
+
+.circle-button{
+    position: absolute;
+    right: -60px;
+    bottom: 130px;
+}
+#circ{
+    font-size: 1.6rem;
+    font-family: var(--textosTitulos);
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: spin 14s linear infinite;
+    color: var(--colorAzul);
+}
+@keyframes spin{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.btn-circle{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: var(--colorAzul);
+    top: 25%;
+    right: -50px;
+    border-radius: 50%;
+    transition: 0.5s all;
+    margin: 0 auto;
+    color: var(--colorBlanco);
+    font-size: 1.5rem;
+}
+.btn-circle:hover{
+    transform: scale(1.2, 1.2);
+    background: var(--colorBlanco);
+    border: 1px solid var(--colorAzul);
+    color: var(--colorAzul);
+    font-size: 2rem;
+}
+  /* End circle button */
+
+/* SECCION ACERCA DE MI */
+
+.seccionAcercaDeMi{    
+    margin: 50px auto;
+    background-color: aliceblue;
+}
+.seccionAcercaDeMi h2{
+    font-size: 5rem;
+    font-family: var(--textosTitulos);
+    color: var(--colorBlanco);
+    -webkit-text-stroke: 1px var(--colorAzul);
+    text-shadow: 2px 2px var(--colorAzul);
+    margin: 50px 0px 30px 0px;
+    transition: 0.3s;
+    text-align: left;
+}
+.seccionAcercaDeMi h2:hover{
+    text-shadow: 3px 3px var(--colorAzul);
+    cursor: pointer;
+}
+.seccionAcercaDeMi p{
+    text-align: justify;
+    line-height: 1.3rem;
+}
+.seccionAcercaDeMi .btnDesktop{
+    float: right;
+    background-color: var(--colorAzul);
+    color: var(--colorBlanco);
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+.seccionAcercaDeMi .btnDesktop:hover{
+    background-color: var(--colorBlanco);
+    color: var(--colorAzul);
+    border: 1px solid var(--colorAzul);
+    font-size: 1.2rem;    
+}
+.seccionAcercaDeMi .btnDesktop .bi,
+.seccionAcercaDeMi .btnMobile .bi {
+    margin-right: 10px;
+}
+.seccionAcercaDeMi img{
+    margin: 50px auto;
+}
+
+.seccionAcercaDeMi .btnMobile{
+    background-color: var(--colorAzul);
+    color: var(--colorBlanco);
+    font-size: 1.2rem;
+    margin: 20px 0px;
+}
+
+
+/* SECCION PROYECTOS */
+
+.seccionProyectos{
+    margin-bottom: 50px;
+    padding-top: 7%;
+}
+.seccionProyectos h2{
+    font-size: 5rem;
+    font-family: var(--textosTitulos);
+    color: var(--colorBlanco);
+    -webkit-text-stroke: 1px var(--colorAzul);
+    text-shadow: 2px 2px var(--colorAzul);
+    margin: 20px auto;
+    transition: 0.3s;
+}
+.seccionProyectos h2:hover{
+    text-shadow: 3px 3px var(--colorAzul);
+    cursor: pointer;
+}
+
+.seccionProyectos nav .nav-tabs{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 1px solid transparent;
+    margin: 30px auto;
+    --bs-nav-tabs-link-active-border-color: var(--colorAzul);
+}
+.seccionProyectos nav .nav-tabs button{
+    width: 20%;
+    background-color: var(--colorAzul);
+    color: var(--colorBlanco);
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px solid var(--colorAzul);
+    transition: 0.3s;
+}
+.seccionProyectos nav .nav-tabs button:hover{
+    background-color: var(--colorBlanco);
+    color: var(--colorAzul);
+    border: 2px solid var(--colorAzul);
+    transform: scale(1.2, 1.2);
+}
+.seccionProyectos nav .nav-tabs button:active{
+    background-color: var(--colorBlanco);
+    color: var(--colorAzul);
+    border-radius: 20px;
+    margin: 10px;
+    border: 2px solid var(--colorAzul);
+    transition: 0.3s;
+}
+
+/* CONTENIDO TABS PROYECTOS */
+.seccionProyectos .tab-content .proyectos hr{
+    margin: 30px auto;
+}
+.seccionProyectos .tab-content .proyectos .proyecto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0%;
+}
+.seccionProyectos .tab-content .proyectos .proyecto img{
+    width: 40%;
+    margin-bottom: 20px;
+}
+.seccionProyectos .tab-content .proyectos .proyecto .nombreProyecto{
+    text-align: left;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    font-weight: bold;
+    padding-left: 30px;
+    color: var(--colorAzul);
+}
+.seccionProyectos .tab-content .proyectos .proyecto a{
+    background-color: var(--colorAzul);
+    width: 40%;
+    border-radius: 5px;
+    padding: 5px 0px;
+    color: var(--colorBlanco);
+    font-weight: bold;
+    border: transparent;
+    align-self: self-end;
+    margin: 10px 10px 0px 0px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.seccionProyectos .tab-content .proyectos .proyecto a:hover{
+    background-color: var(--colorBlanco);
+    color: var(--colorAzul);
+    border: 1px solid var(--colorAzul);
+    transform: rotate(-5deg);
+    box-shadow: -4px 4px var(--colorAzul);
+}
+.seccionProyectos .tab-content .proyectos .proyecto a .bi{
+    margin-right: 5px;
+}
+.seccionProyectos .tab-content .proyectos .imagenProyecto{
+    padding-top: 120px;
+    filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.5));
+}
+
+/* SECCION CONTACTO */
+.seccionContacto{
+    margin-top: 30px;
+    padding-top: 4%;
+    min-height: 90vh;
+}
+.seccionContacto h2{
+    font-family: var(--textosTitulos);
+    color: var(--colorAzul);
+    text-align: center;
+    font-size: 5.5rem;
+    margin: 50px 0px 30px 0px;
+}
+.seccionContacto button{
+    background-color: var(--colorBlanco);
+    border: 1px solid var(--colorAzul);
+    color: var(--colorAzul);
+    font-size: 2.3rem;
+    border-radius: 10px;
+    padding: 10px 50px;
+    margin: 70px 0px;
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+    animation-name: mover;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;    
+}
+@keyframes mover {
+    0% {
+    transform: translateY(0); }
+    50% {
+    transform: translateY(10px); }
+    100% {
+    transform: translateY(0); } }
+.seccionContacto button .new {
+    background: var(--colorAzul);
+    color: var(--colorBlanco);
+    display: grid;
+    inset: 0;
+    place-content: center;
+    pointer-events: none;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: 0.2s;
+}
+.seccionContacto button:hover .new {
+    transform: translateX(0);
+}
+.seccionContacto .socialMedia{
+    margin: 80px 10px 0px 10px;    
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.seccionContacto .socialMedia .redSocial,
+.seccionContacto .socialMedia .redSocial2{
+    background-color: var(--colorAzul);
+    border-radius: 5px;
+    border-bottom: 2px solid var(--colorBlanco);
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    color: var(--colorBlanco);
+    font-size: 1.3rem;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.seccionContacto .socialMedia .redSocial:hover{
+    background-color: var(--colorBlanco);
+    box-shadow: 5px 5px var(--colorAzul);
+    border: 1px solid var(--colorAzul);
+    color: var(--colorAzul);
+    transform: rotate(-5deg);
+    cursor: pointer;
+}
+.seccionContacto .socialMedia .redSocial2:hover{
+    background-color: var(--colorBlanco);
+    box-shadow: 5px 5px var(--colorAzul);
+    border: 1px solid var(--colorAzul);
+    color: var(--colorAzul);
+    transform: rotate(5deg);
+    cursor: pointer;
+}
+.seccionContacto .socialMedia .redSocial p,
+.seccionContacto .socialMedia .redSocial2 p{
+    margin: 0%;
+    padding: 30px 0px
+}
+
+.seccionContacto .socialMedia .redSocial img,
+.seccionContacto .socialMedia .redSocial2 img{
+    width: 50px;
+}
+
+/*******************/
+/* MEDIDAS TABLETS */
+/*******************/
+
+@media (max-width: 810px) {
+
+    /* Navbar */
+    .header {
+        position: absolute;
+        top: 20px;    
+        position: sticky;
+        z-index: 1000;
+    }
+
+    /* PRIMERA SECCION */
+
+    .seccion1{
+        min-height: 60vh;
+    }
+    .seccion1 h1{
+        margin-top: 25%;
+        font-size: 6rem;
+        text-align: center;
+    }
+    .botonCirculo{
+        position: absolute;
+        bottom: -120px;
+        right: 30%;
+    }
+    /* End circle button */
+
+
+
+    /* SECCION ACERCA DE MI */
+
+    .seccionAcercaDeMi{
+        padding-top: 8%;
+    }
+    .seccionAcercaDeMi h2{
+        font-size: 5rem;
+        text-align: center;
+    }
+    .seccionAcercaDeMi p{
+        text-align: justify;
+        line-height: 1.3rem;
+        margin: 0px 10px;
+    }
+    .seccionAcercaDeMi img{
+        margin: 10px 0px 50px 0px;
+    }
+    .seccionAcercaDeMi .btnMobile{
+        background-color: var(--colorAzul);
+        color: var(--colorBlanco);
+        font-size: 1.2rem;
+        margin: 50px 0px;
+    }
+
+
+
+    /* SECCION PROYECTOS */
+
+    .seccionProyectos{
+        margin-bottom: 50px;
+        padding-top: 12%;
+    }
+    .seccionProyectos h2{
+        margin: 20px 0px 10px 0px;
+    }
+    .seccionProyectos nav .nav-tabs{
+        margin: 20px 0px 30px 0px;
+    }
+
+
+
+    /* SECCION CONTACTO */
+
+    .seccionContacto{
+        margin-top: 50px;
+        padding-top: 10%;
+        min-height: 70vh;
+    }
+    .seccionContacto h2{
+        font-size: 5rem;
+        margin: 30px 0px;
+    }
+    .seccionContacto button{
+        margin: 20px 0px;
+        width: 85%;
+        animation-name: mover;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;    
+    }
+    .seccionContacto .socialMedia{
+        margin: 50px 0px;    
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .seccionContacto .socialMedia .redSocial,
+    .seccionContacto .socialMedia .redSocial2{
+        background-color: var(--colorAzul);
+        border-radius: 5px;
+        border-bottom: 2px solid var(--colorBlanco);
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        color: var(--colorBlanco);
+        font-size: 1.3rem;
+        transition: 0.3s;
+        text-decoration: none;
+        margin: 20px 0px;
+    }
+}
+
+
+
+/*******************/
+/* MEDIDAS CELULAR */
+/*******************/
+
+@media (max-width: 560px) {
+
+    /* MENU HAMBURGUESA */
+
+    .menuHamburguesa {
+        padding: 0px;
+        width: 100%;
+        background-color: transparent;
+        position: fixed;
+    }
+
+    .menuHamburguesa .abrir-menu,
+    .menuHamburguesa .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .menuHamburguesa .abrir-menu {
+        color: var(--colorAzul);
+        font-size: 3rem;
+        padding: 10px 10px 5px 10px;
+        background-color: var(--colorBlanco);
+        border-radius: 10px ;
+        box-shadow: 0 1px 4px 0 rgba(101, 101, 101, 0.32); 
+        overflow-x: hidden;        
+        right: 10px;
+        top: 10px;
+        position: absolute;
+    }
+
+    .menuHamburguesa .cerrar-menu {
+        color: var(--colorBlanco);
+        font-size: 3rem;
+    }
+
+    .menuHamburguesa .nav {
+        font-family: var(--textosTitulos);
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--colorAzul);
+        padding: 1rem 1.3rem 2rem 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .menuHamburguesa .nav.visible {
+        opacity: 1;
+        visibility: visible;
+        width: 230px;
+        display: flex;
+        height: 100vh;
+        flex-wrap: inherit;
+        border-radius: 10px 0px 0px 10px;
+        z-index: 2;
+    }
+    
+    .menuHamburguesa .nav-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
+        align-self: center;
+
+    }
+
+    .menuHamburguesa .nav-list li{
+        margin-bottom: 30px;
+        padding: 20px 0px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--colorBlanco);
+    }
+
+    .menuHamburguesa .nav-list li a {
+        color: #ecececec;
+        
+    }
+
+
+
+    /* PRIMERA SECCION */
+
+    .seccion1{
+        min-height: 50vh;
+    }
+    .seccion1 h1{
+        margin-top: 30%;
+        margin-bottom: 30px;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .seccion1 p{
+        text-align: justify;
+        font-size: 0.8rem;
+    }
+    .espacioBoton{
+        position: relative;
+    }
+    .botonCirculo{
+        position: absolute;
+        bottom: -155px;
+        right: 45%;
+    }
+
+    .circle-button{
+        position: absolute;
+        right: -75px;
+        bottom: 130px;
+    }
+    #circ{
+        font-size: 1.2rem;
+    }
+    .btn-circle{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        background: var(--colorAzul);
+        top: 23%;
+        right: -40px;
+        border-radius: 50%;
+        transition: 0.5s all;
+        margin: 0 auto;
+        color: var(--colorBlanco);
+        font-size: 1.5rem;
+    }
+    .btn-circle:hover{
+        transform: scale(1.2, 1.2);
+        background: var(--colorBlanco);
+        border: 1px solid var(--colorAzul);
+        color: var(--colorAzul);
+        font-size: 2rem;
+    }
+    /* End circle button */
+
+
+
+    /* SECCION ACERCA DE MI */
+
+    .seccionAcercaDeMi{    
+        margin: 50px auto;
+        padding-top: 15%;
+        background-color: aliceblue;
+    }
+    .seccionAcercaDeMi h2{
+        font-size: 3rem;
+        font-family: var(--textosTitulos);
+        color: var(--colorBlanco);
+        -webkit-text-stroke: 1px var(--colorAzul);
+        text-shadow: 2px 2px var(--colorAzul);
+        margin: 50px 0px 30px 0px;
+        transition: 0.3s;
+        text-align: center;
+    }
+    .seccionAcercaDeMi p{
+        text-align: justify;
+        line-height: 0.7rem;
+        line-height: 1rem;
+    }
+    .seccionAcercaDeMi .btnMobile{
+        background-color: var(--colorAzul);
+        color: var(--colorBlanco);
+        font-size: 1.2rem;
+        margin: 30px 0px;
+    }
+    .seccionAcercaDeMi img{
+        margin: 10px 0px 50px 0px;
+    }
+
+    
+
+    /* SECCION PROYECTOS */
+
+    .seccionProyectos{
+        margin-bottom: 50px;
+        padding-top: 20%;
+    }
+    .seccionProyectos h2{
+        font-size: 3rem;
+        margin: 20px auto;
+    }
+    .seccionProyectos nav .nav-tabs{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        border: 1px solid transparent;
+        margin: 10px 0px 30px 0px;
+        --bs-nav-tabs-link-active-border-color: var(--colorAzul);
+    }
+    .seccionProyectos nav .nav-tabs button{
+        width: 70%;;
+    }
+
+    /* CONTENIDO TABS PROYECTOS */
+    .seccionProyectos .tab-content .proyectos hr{
+        margin: 30px auto;
+    }
+    .seccionProyectos .tab-content .proyectos .proyecto img{
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    .seccionProyectos .tab-content .proyectos .proyecto .nombreProyecto{
+        text-align: left;
+        font-size: 2rem;
+        line-height: 2.3rem;
+        font-weight: bold;
+        padding-left: 30px;
+        color: var(--colorAzul);
+    }
+    .seccionProyectos .tab-content .proyectos .proyecto a{
+        background-color: var(--colorAzul);
+        width: 40%;
+        border-radius: 5px;
+        padding: 5px 0px;
+        color: var(--colorBlanco);
+        font-weight: bold;
+        border: transparent;
+        align-self: self-end;
+        margin: 10px 10px 0px 0px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .seccionProyectos .tab-content .proyectos .proyecto a:hover{
+        background-color: var(--colorBlanco);
+        color: var(--colorAzul);
+        border: 1px solid var(--colorAzul);
+        transform: rotate(-5deg);
+        box-shadow: -4px 4px var(--colorAzul);
+    }
+    .seccionProyectos .tab-content .proyectos .proyecto a .bi{
+        margin-right: 5px;
+    }
+    .seccionProyectos .tab-content .proyectos .imagenProyecto{
+        padding-top: 40px;
+        filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.5));
+    }
+
+
+
+    /* SECCION CONTACTO */
+
+    .seccionContacto{
+        margin-top: 50px;
+        padding-top: 20%;
+        min-height: 70vh;
+    }
+    .seccionContacto h2{
+        font-size: 3rem;
+        margin: 30px 0px;
+    }
+    .seccionContacto button{
+        margin: 20px 0px;
+        width: 90%;
+        animation-name: mover;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;    
+    }
+    .seccionContacto .socialMedia{
+        margin: 50px 0px;    
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .seccionContacto .socialMedia .redSocial,
+    .seccionContacto .socialMedia .redSocial2{
+        background-color: var(--colorAzul);
+        border-radius: 5px;
+        border-bottom: 2px solid var(--colorBlanco);
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        color: var(--colorBlanco);
+        font-size: 1.3rem;
+        transition: 0.3s;
+        text-decoration: none;
+        margin: 20px 0px;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    /* MENU HAMBURGUESA */
+
+    .menuHamburguesa {
+        padding: 0px;
+        width: 100%;
+        background-color: transparent;
+        position: fixed;
+    }
+
+    .menuHamburguesa .abrir-menu,
+    .menuHamburguesa .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .menuHamburguesa .abrir-menu {
+        color: var(--colorAzul);
+        font-size: 3rem;
+        padding: 10px 10px 5px 10px;
+        background-color: var(--colorBlanco);
+        border-radius: 10px ;
+        box-shadow: 0 1px 4px 0 rgba(101, 101, 101, 0.32); 
+        overflow-x: hidden;        
+        right: 10px;
+        top: 10px;
+        position: absolute;
+    }
+
+    .menuHamburguesa .cerrar-menu {
+        color: var(--colorBlanco);
+        font-size: 3rem;
+    }
+
+    .menuHamburguesa .nav {
+        font-family: var(--textosTitulos);
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--colorAzul);
+        padding: 1rem 1.3rem 2rem 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .menuHamburguesa .nav.visible {
+        opacity: 1;
+        visibility: visible;
+        width: 230px;
+        display: flex;
+        height: 100vh;
+        flex-wrap: inherit;
+        border-radius: 10px 0px 0px 10px;
+        z-index: 2;
+    }
+    
+    .menuHamburguesa .nav-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
+        align-self: center;
+
+    }
+
+    .menuHamburguesa .nav-list li{
+        margin-bottom: 30px;
+        padding: 20px 0px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--colorBlanco);
+    }
+
+    .menuHamburguesa .nav-list li a {
+        color: #ecececec;
+        
+    }
+
+
+
+    /* PRIMERA SECCION */
+
+    .seccion1{
+        min-height: 70vh;
+    }
+    .seccion1 h1{
+        margin-top: 40%;
+    }
+
+
+
+    /* SECCION ACERCA DE MI */
+
+    .seccionAcercaDeMi h2{
+        font-size: 2.5rem;
+        text-shadow: 1px 1px var(--colorAzul);
+    }
+    .seccionAcercaDeMi p{
+        text-align: justify;
+        line-height: 0.7rem;
+        line-height: 1rem;
+    }
+
+    /* SECCION PROYECTOS */
+
+    /* CONTENIDO TABS PROYECTOS */
+    .seccionProyectos .tab-content .proyectos .proyecto a{
+        width: 50%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+
+
+    /* SECCION CONTACTO */
+
+    .seccionContacto h2{
+        font-size: 2.5rem;
+    }
+    .seccionContacto button{
+        margin: 20px 0px;
+        width: 90%;
+        animation-name: mover;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;    
+    }
+
+    .seccionContacto .socialMedia .redSocial,
+    .seccionContacto .socialMedia .redSocial2{
+        margin: 10px 0px;
+    }
+}
