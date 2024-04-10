@@ -30,6 +30,9 @@
 
     <!--ICONOS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--CARRUSEL-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <div class='fondo'></div>
@@ -156,8 +159,8 @@
                         <div class="nav nav-tabs" id="tabProyectos" role="tablist">
                             <button class="nav-link active" id="nav-web-tab" data-bs-toggle="tab" data-bs-target="#nav-web" type="button" role="tab" aria-controls="nav-web" aria-selected="false">UI / Web</button>
                             <button class="nav-link" id="nav-diseño-tab" data-bs-toggle="tab" data-bs-target="#nav-diseño" type="button" role="tab" aria-controls="nav-diseño" aria-selected="true">Diseño</button>
-                            <!--<button class="nav-link" id="nav-animacion-tab" data-bs-toggle="tab" data-bs-target="#nav-animacion" type="button" role="tab" aria-controls="nav-animacion" aria-selected="false">Animación</button>
-                            <button class="nav-link" id="nav-ilustracion-tab" data-bs-toggle="tab" data-bs-target="#nav-ilustracion" type="button" role="tab" aria-controls="nav-ilustracion" aria-selected="false">Ilustración</button>-->
+                            <button class="nav-link" id="nav-animacion-tab" data-bs-toggle="tab" data-bs-target="#nav-animacion" type="button" role="tab" aria-controls="nav-animacion" aria-selected="false">Animación</button>
+                            <button class="nav-link" id="nav-ilustracion-tab" data-bs-toggle="tab" data-bs-target="#nav-ilustracion" type="button" role="tab" aria-controls="nav-ilustracion" aria-selected="false">Ilustración</button>
                             
                         </div>
                     </nav>
@@ -242,7 +245,7 @@
                                         <img src="images/mockup-davivienda-artes.png" class="img-fluid imagenProyecto" alt="">
                                     </div>
                                 </div> 
-                            </div>
+                            </div>                            
                             <div class="proyectos">
                                 <hr>
                                 <div class="row justify-content-center">
@@ -250,30 +253,11 @@
                                         <div class="proyecto">
                                             <img src="images/numero-2.svg" class="img-fluid" alt="">
                                             <p class="nombreProyecto">
-                                                Posters minimal 1.0
-                                            </p>
-                                            <a href="https://www.behance.net/gallery/105668659/Minimal-Posters-10" target="_blank">
-                                                <i class="bi bi-eye-fill"></i> Ver proyecto
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-10 col-md-6 col-lg-7" data-aos="zoom-out" data-aos-offset="400" data-aos-easing="ease-in-sine">
-                                        <img src="images/minimal-posters.png" class="img-fluid imagenProyecto" alt="">
-                                    </div>
-                                </div> 
-                            </div>
-                            <div class="proyectos">
-                                <hr>
-                                <div class="row justify-content-center">
-                                    <div class="col-10 col-md-5 col-lg-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                                        <div class="proyecto">
-                                            <img src="images/numero-3.svg" class="img-fluid" alt="">
-                                            <p class="nombreProyecto">
                                                 Identidad de marca TRIBUTAR-IA SAS
                                             </p>
-                                            <!--<a href="https://www.behance.net/gallery/105668659/Minimal-Posters-10" target="_blank">
+                                            <a href="https://drive.google.com/file/d/1z4P_OoCTwcXO8lVXdegbiSYv1QG3tsSR/view?usp=sharing" target="_blank">
                                                 <i class="bi bi-eye-fill"></i> Ver proyecto
-                                            </a>-->
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="col-10 col-md-6 col-lg-7" data-aos="zoom-out" data-aos-offset="400" data-aos-easing="ease-in-sine">
@@ -286,7 +270,45 @@
                                 <div class="row justify-content-center">
                                     <div class="col-10 col-md-5 col-lg-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                                         <div class="proyecto">
+                                            <img src="images/numero-3.svg" class="img-fluid" alt="">
+                                            <p class="nombreProyecto">
+                                                Identidad de marca Quality Business Integral SAS
+                                            </p>
+                                            <!--<a href="https://www.behance.net/gallery/105668659/Minimal-Posters-10" target="_blank">
+                                                <i class="bi bi-eye-fill"></i> Ver proyecto
+                                            </a>-->
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-md-6 col-lg-7" data-aos="zoom-out" data-aos-offset="400" data-aos-easing="ease-in-sine">
+                                        <img src="images/mockup-marca-qbi.png" class="img-fluid imagenProyecto" alt="">
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="proyectos">
+                                <hr>
+                                <div class="row justify-content-center">
+                                    <div class="col-10 col-md-5 col-lg-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                                        <div class="proyecto">
                                             <img src="images/numero-4.svg" class="img-fluid" alt="">
+                                            <p class="nombreProyecto">
+                                                Revista Echo
+                                            </p>
+                                            <a href="https://drive.google.com/file/d/1o9FJ2UaBD83-h5tGveKiRCVFYEF0VGAf/view?usp=sharing" target="_blank">
+                                                <i class="bi bi-eye-fill"></i> Ver proyecto
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-md-6 col-lg-7" data-aos="zoom-out" data-aos-offset="400" data-aos-easing="ease-in-sine">
+                                        <img src="images/revista-moda.png" class="img-fluid imagenProyecto" alt="">
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="proyectos">
+                                <hr>
+                                <div class="row justify-content-center">
+                                    <div class="col-10 col-md-5 col-lg-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                                        <div class="proyecto">
+                                            <img src="images/numero-5.svg" class="img-fluid" alt="">
                                             <p class="nombreProyecto">
                                                 Infografías
                                             </p>
@@ -299,18 +321,73 @@
                                         <img src="images/mockup-infografias.png" class="img-fluid imagenProyecto" alt="">
                                     </div>
                                 </div> 
-                            </div>
+                            </div>                            
                         </div>                       
 
-                        <!--CONTENIDO TAB 3
+                        <!--CONTENIDO TAB 3 -->
                         <div class="tab-pane fade" id="nav-animacion" role="tabpanel" aria-labelledby="nav-animacion-tab" tabindex="0">
-                            3
-                        </div>-->
+                            <div class="proyectos">
+                                <hr>
+                                <div class="row justify-content-center">
+                                    <div class="col-10 col-md-5 col-lg-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                                        <div class="proyecto">
+                                            <img src="images/numero-1.svg" class="img-fluid" alt="">
+                                            <p class="nombreProyecto">
+                                                Animaciones Banco Davivienda (Centro América)
+                                            </p>
+                                            <!--<a href="https://movil.davivienda.cr/" target="_blank">
+                                                <i class="bi bi-eye-fill"></i> Ver proyecto
+                                            </a>-->
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-md-6 col-lg-7" data-aos="zoom-out" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                                        <img src="images/animaciones-davivienda.png" class="img-fluid imagenProyecto" alt="">
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="proyectos">
+                                <hr>
+                                <div class="row justify-content-center">
+                                    <div class="col-10 col-md-5 col-lg-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                                        <div class="proyecto">
+                                            <img src="images/numero-2.svg" class="img-fluid" alt="">
+                                            <p class="nombreProyecto">
+                                                Animación personajes
+                                            </p>
+                                            <a href="https://drive.google.com/file/d/1uMHas4OhxCrNAk3dnlgyQcw_QybzTEUe/view?usp=sharing" target="_blank">
+                                                <i class="bi bi-eye-fill"></i> Ver gif
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-md-6 col-lg-7" data-aos="zoom-out" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                                        <img src="images/animation-camping.png" class="img-fluid imagenProyecto" alt="">
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
 
-                        <!--CONTENIDO TAB 4
+                        <!--CONTENIDO TAB 4-->
                         <div class="tab-pane fade" id="nav-ilustracion" role="tabpanel" aria-labelledby="nav-ilustracion-tab" tabindex="0">
-                            4
-                        </div>-->
+                            <div class="proyectos">
+                                <hr>
+                                <div class="row justify-content-center">
+                                    <div class="col-10 col-md-5 col-lg-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                                        <div class="proyecto">
+                                            <img src="images/numero-1.svg" class="img-fluid" alt="">
+                                            <p class="nombreProyecto">
+                                                Stickers personajes
+                                            </p>
+                                            <a data-bs-toggle="modal" data-bs-target="#ModalStickers" style="cursor: pointer;">
+                                                <i class="bi bi-eye-fill"></i> Ver proyecto
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-md-6 col-lg-7" data-aos="zoom-out" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                                        <img src="images/stickers-personajes.png" class="img-fluid imagenProyecto" alt="">
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -318,7 +395,7 @@
 
 
         <!--SECCION CONTACTO-->
-        <section class="container-fluid seccionContacto" id="contacto" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <section class="container-fluid seccionContacto" id="contacto">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10 text-center">
                     <h2>
@@ -352,7 +429,47 @@
             </div>
         </section>
     </main>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="ModalStickers" tabindex="-1" aria-labelledby="ModalStickersLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body modal-carrusel-stickers">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="images/Stickers-messi.png" class="img-fluid mx-auto" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/Stickers-lebron.png" class="img-fluid mx-auto" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/Stickers-messi-2.png" class="img-fluid mx-auto" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/Stickers-lebron-2.png" class="img-fluid mx-auto" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/Stickers-messi-3.png" class="img-fluid mx-auto" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/Stickers-lebron-3.png" class="img-fluid mx-auto" alt="">
+                        </div>
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -363,5 +480,36 @@
         new CircleType(document.getElementById('circ'));
     </script>
     <script src="js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                shadow: true,
+                translate: [0, 0, -400],
+                },
+                next: {
+                translate: ["100%", 0, 0],
+                },
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            
+        });
+    </script>
 </body>
 </html>

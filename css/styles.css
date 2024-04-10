@@ -433,6 +433,23 @@ hr{
     width: 50px;
 }
 
+.modal-content{
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.modal-carrusel-stickers .swiper{
+    width: 600px;
+    height: 600px;
+}
+.modal-carrusel-stickers .swiper .swiper-slide{
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+}
+.modal-carrusel-stickers .swiper .swiper-slide img{
+    border-radius: 30px;
+}
+
 /*******************/
 /* MEDIDAS TABLETS */
 /*******************/
